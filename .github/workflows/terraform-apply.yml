@@ -52,5 +52,5 @@ jobs:
         path: .
 
     - name: Apply 
-      run: terraform apply -auto-approve tfplan.out
+      run: terraform apply -auto-approve tfplan
 
