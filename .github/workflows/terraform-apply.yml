@@ -1,4 +1,4 @@
- 
+
 name: 'Terraform'
 
 on:
@@ -50,4 +50,7 @@ jobs:
       with:
         name: tfplan
         path: tfplan.out
+
+    - name: Apply 
+      run: terraform apply -auto-approve tfplan.out
 
